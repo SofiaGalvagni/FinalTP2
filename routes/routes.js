@@ -1,11 +1,9 @@
 import { Router } from "express";
+import palabraRouter from "./palabraRouter.js";
 
-const routes = Router();
+const router = Router();
+router.use("/palabra", palabraRouter);
 
-routes.post("/")
-routes.get("/")
-routes.delete("/")
-routes.get("/all")
-routes.get("/:parametro")
 
-export default routes;
+
+export default router;
